@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Impact';
+    src: url(../fonts/Impact.woff) format('woff'),
+    url(../fonts/Impact.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(../fonts/Brandon_Grotesque_Medium_cyrillic.woff) format('woff'),
+    url(../fonts/Brandon_Grotesque_Medium_cyrillic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('../fonts/Lato-Thin.eot');
+    src: url('../fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Thin.woff') format('woff'),
+    url('../fonts/Lato-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaLightC.eot');
+    src: url('../fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaLightC.woff') format('woff'),
+    url('../fonts/FuturaLightC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Brandon-Grot-W05-Light';
+    src: url('../fonts/BrandonGrotesqueCondW05-Lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
