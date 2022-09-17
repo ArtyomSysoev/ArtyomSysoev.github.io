@@ -2,7 +2,7 @@
     margin: 0
     padding: 0
     font-family: 'Roboto'
-
+    
 nav
     background: #3d9be9
     z-index: 1
@@ -11,6 +11,7 @@ nav
     left: 0
     right: 0
     height: 60px
+    
     .logo
         a
             font-family: 'Impact'
@@ -70,7 +71,6 @@ nav
     background-attachment: fixed
     padding: 45px 0
     margin-top: 60px
-    &_wrapper
     
     &_header
         font-family: 'Roboto'
@@ -169,6 +169,7 @@ nav
         color: white
         text-align: center        
         &_img
+            margin-top: 20px
             img
                 height: 120px
         &_title
@@ -230,7 +231,7 @@ footer
             margin-right: 0
             margin-bottom: 20px
         textarea
-            width: 540px
+            width: 100%
         textarea:focus
             outline: none
     .bottom
@@ -246,7 +247,79 @@ footer
             a
                 color: #5ab7e8
                 
+@media (max-width: 992px)
+    nav
+        .logo
+            a
+                font-size: 19px
+                margin-left: 0px
+        .menu
+            li
+                font-size: 16px
+        .telefon
+            a
+                font-size: 18px
 
-    
+@media (max-width: 768px)
+    nav      
+        .logo
+            margin-top: 5px  
+        .cart
+            display: none
+        .menu
+            padding-top: 40px
+            padding-left: 30px
+            position: fixed
+            top: 0px
+            left: -100%
+            width: 50%
+            flex-direction: column
+            height: 100vh
+            background-color: rgba(0, 0, 0, .8)
+            transition: 0.5s all
+            &_active
+                left: 0
+            li.main
+                a
+                    display: block
+                    color: #FFDE11
 
-        
+            .drop_menu
+                display: inline
+                position: static
+                background-color: transparent
+                li
+                    a
+                        color: #FFDE11
+                        line-height: 22px
+        .hamburger
+            position: fixed
+            top: 15px
+            right: 20px
+            span
+                display: block
+                width: 29px
+                height: 3px
+                background-color: #FFDE11
+                margin-top: 6px
+                transition: 0.5s all
+            &_active 
+                span
+                    &:nth-child(2)
+                        background-color: transparent        
+                    &:nth-child(1)        
+                        transform-origin: 50% 50% 0
+                        transform: translateY(8px) rotate(45deg)
+
+                    &:nth-child(3)        
+                        transform-origin: 50% 50% 0
+                        transform: translateY(-10px) rotate(-45deg)
+    footer
+        .tel
+            text-align: center
+        .mail
+            text-align: center
+    footer
+        .bottom
+            .tac
+                margin: 5px 0
